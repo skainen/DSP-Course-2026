@@ -50,5 +50,6 @@ A microcontroller reading a noisy analog sensor, such as a distance sensor, can 
 
 ## AI usage
 
-Tool used: Claude Opus 5.5
+Tool used: Claude Opus 5.5.
+
 How I used it: Code check, explanation.
