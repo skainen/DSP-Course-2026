@@ -13,5 +13,4 @@ Multiplying each term by z^-1 raises its exponent by one.
 5. b(1) = 0.5 multiplies z^0, the current input. b(2) = 0.5 multiplies z^-1, the previous input.
 Setting a = 1 means the denominator is 1.
 
-
 6. The current input x[n] has four times the weight of the previous one. Output follows the input much more closely with the peak at n = 1 and much less smoothing.
