@@ -1,0 +1,4 @@
+file,label,group,split
+class_recordings/team01_clap_take01.wav,clap,team01_session01,train
+class_recordings/team04_clap_take01.wav,clap,team04_session01,validation
+class_recordings/team05_clap_take01.wav,clap,team05_session01,test
