@@ -46,7 +46,7 @@ From `results/edge_counts.csv`:
 | noisy | TODO | TODO | TODO |
 
 ## Main conclusion
-`
+
 With default thresholds, the amount of smoothing decides how many false edges the noise produces.
 
 - **Canny σ=1** turns the noise into many false edges. The count roughly doubles on the noisy image, and the sky, which contains no true edges, fills with short curved strands. MATLAB sets the default high threshold so that 70% of pixels count as non-edge, so about 30% of gradient magnitudes are always candidates, whatever the image contains.
@@ -57,4 +57,4 @@ Edge detection on noisy images trades noise suppression (larger σ) against loca
 
 ## Limitation
 
-The edge-pixel count (`nnz`) does not measure correctness. A count can stay the same while true edges are lost and false ones invented, because the two cancel out (see Canny σ=3 in `edge_agreement.csv`). A count can also fall while the map gets worse (Sobel). Measuring correctness needs a reference edge map and a matched comparison, such as precision and recall with a distance tolerance. `edge_agreement.csv` approximates this using the clean-image map as the reference, but that reference is itself detector-dependent: Canny σ=1 already marks grass texture as edges on the clean image.
+The edge-pixel count (`nnz`) does not measure correctness. A count can stay the same while true edges are lost and false ones invented, because the two cancel out. A count can also fall while the map gets worse. Measuring correctness needs a reference edge map and a matched comparison, such as precision and recall with a distance tolerance. `edge_agreement.csv` approximates this using the clean-image map as the reference, but that reference is itself detector-dependent: Canny σ=1 already marks grass texture as edges on the clean image.
