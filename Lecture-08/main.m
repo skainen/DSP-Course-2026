@@ -1,3 +1,5 @@
+%% Lecture 8 exercises
+
 clear; close all; clc;
 
 I = imread('cameraman.tif');   % reference image for sections 1, 2, 4, 5
