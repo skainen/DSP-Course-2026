@@ -58,3 +58,7 @@ Edge detection on noisy images trades noise suppression (larger σ) against loca
 ## Limitation
 
 The edge-pixel count (`nnz`) does not measure correctness. A count can stay the same while true edges are lost and false ones invented, because the two cancel out. A count can also fall while the map gets worse. Measuring correctness needs a reference edge map and a matched comparison, such as precision and recall with a distance tolerance. `edge_agreement.csv` approximates this using the clean-image map as the reference, but that reference is itself detector-dependent: Canny σ=1 already marks grass texture as edges on the clean image.
+
+## AI Use
+
+Claude Opus 5.5 used for code generation and explanation.
